@@ -26,7 +26,7 @@ h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
 }
-.category_butt_left{
+button{
 
     text-align: center;
     flex-wrap: nowrap;
@@ -78,10 +78,9 @@ h1 {
   background: rgba(20, 20, 20, .5);
   animation: animate 10s linear infinite;
 }
-button :hover .liquid{
-  top: -120px;
+button:hover {
+  background-color: yellow;
 }
-
 @keyframes animate {
   0% {
     transform: translate(-50%, -75%) rotate(0deg);
