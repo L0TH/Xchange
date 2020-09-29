@@ -27,23 +27,62 @@ h1 {
 }
 .category_butt{
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 17%;
     text-align: center;
-	width: 20%;
-	height: 75px;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-
+    width: 350px;
+    height: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius:40px/24px;
     background-image: linear-gradient( 135deg, rgb(41, 28, 160) 10%,#aa46e46b 100%);
+    transition: .5s;
+    
 }
-button .overlay{
-	width: 100%;
-	height: 100%;
-	padding: 50px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, rgb(41, 28, 160) 10%,#aa46e46b 100%);
-	
+
+.liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+.category_butt::after,
+.category_butt::before {
+  content: '';
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translate(-20%, -15%);
+  background: #000;
+}
+.category_butt::before {
+  
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+.category_butt::after {
+  
+  border-radius: 40%;
+  background: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+}
+button :hover .liquid{
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
 }
