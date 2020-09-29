@@ -1,0 +1,92 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 100%;
+  width: 100%;}
+header {
+	text-align: center;
+	width: auto;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, rgb(41, 28, 160) 10%,#aa46e46b 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+	margin-bottom: 30px;
+}
+.category_butt_left{
+
+    text-align: center;
+    flex-wrap: nowrap;
+    width: 350px;
+    height: 100px;
+    
+    position: relative;
+    left: 15%;
+    margin-right: 15%;
+   
+    margin-top: 5%;
+    overflow: hidden;
+    border-radius:40px/24px;
+    background-image: linear-gradient( 135deg, rgb(41, 28, 160) 10%,#aa46e46b 100%);
+    transition: .5s;
+    
+}
+
+.liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+.category_butt_left::after,
+.category_butt_left::before {
+  content: '';
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translate(-20%, -15%);
+  background: #000;
+}
+.category_butt_left::before {
+  
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+.category_butt_left::after {
+  
+  border-radius: 40%;
+  background: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+}
+button :hover .liquid{
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
