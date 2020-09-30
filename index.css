@@ -25,6 +25,11 @@ h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
 }
+.flexp{
+  display: flex;
+  flex-direction: column;
+
+}
 .container{
     width: 350px;
     height: 100px;   
