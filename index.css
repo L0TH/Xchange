@@ -26,12 +26,18 @@ h1 {
 	margin-bottom: 30px;
 }
 .flexp{
+  align-content: center;
+  flex-grow: inherit;
+  margin:0;
   display: flex;
   flex-direction: column;
+  flex-wrap:wrap;
+  
 
 }
 .container{
-    width: 350px;
+  margin: 50px;  
+  width: 350px;
     height: 100px;   
     position: relative;
     overflow: hidden;
@@ -46,7 +52,7 @@ h1 {
   width: 100%;
   height: 300%;
   position: absolute;
-  top: -60%;
+  top: -50%;
   left: 50%;
   transform: translate(-20%, -15%);
   background: #000;
