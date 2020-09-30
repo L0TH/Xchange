@@ -28,14 +28,15 @@ h1 {
 .flexp{
   align-content: center;
   flex-grow: inherit;
-  margin:0;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap:wrap;
-  
+
 }
 .container{
-    margin: 50px;  
+  
+    margin: 50px;
     width: 350px;
     height: 100px;   
     position: relative;
@@ -70,6 +71,8 @@ h1 {
 }
 .container:hover {
   background-color: yellow;
+  transform: translate(0, 3%) rotate(0deg);
+
 }
 @keyframes animate {
   0% {
