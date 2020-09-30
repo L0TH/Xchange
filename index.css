@@ -25,26 +25,22 @@ h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
 }
-button{
+.container{
+    margin: auto;
+    display: flex;
 
-    
     width: 350px;
-    height: 100px;
-    
+    height: 100px;   
     position: relative;
-    left: 15%;
-    margin-right: 15%;
-   
-    margin-top: 5%;
     overflow: hidden;
     border-radius:40px/24px;
     background-image: linear-gradient( 135deg, rgb(41, 28, 160) 10%,#aa46e46b 100%);
     transition: .5s;
-    
 }
 
+
 .liquid {
-  position: absolute;
+  position: relative;
   top: -80px;
   left: 0;
   width: 200px;
@@ -53,8 +49,8 @@ button{
   box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
   transition: .5s;
 }
-.category_butt_left::after,
-.category_butt_left::before {
+.container::after,
+.container::before {
   content: '';
   width: 100%;
   height: 300%;
@@ -64,19 +60,19 @@ button{
   transform: translate(-20%, -15%);
   background: #000;
 }
-.category_butt_left::before {
+.container::before {
   
   border-radius: 45%;
   background: rgba(20, 20, 20, 1);
   animation: animate 5s linear infinite;
 }
-.category_butt_left::after {
+.container::after {
   
   border-radius: 40%;
   background: rgba(20, 20, 20, .5);
   animation: animate 10s linear infinite;
 }
-button:hover {
+.container:hover {
   background-color: yellow;
 }
 @keyframes animate {
@@ -86,9 +82,4 @@ button:hover {
   100% {
     transform: translate(-50%, -75%) rotate(360deg);
   }
-}
-.container{
-  margin: auto;
-  display: flex;
-
 }
