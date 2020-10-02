@@ -25,6 +25,9 @@ h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
 }
+a{
+  text-decoration: none;
+}
 .flexp{
   
   align-content: center;
@@ -36,6 +39,7 @@ h1 {
 
 }
 .container{
+ 
     font-size: 120%;
     font-family: 'Dancing Script', cursive;
     color: #FFF;
